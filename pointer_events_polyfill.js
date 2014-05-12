@@ -14,7 +14,7 @@ function PointerEventsPolyfill(options){
             {
                 var agent = navigator.userAgent;
                 if (agent.match(/MSIE ([0-9]{1,}[\.0-9]{0,})/) != null){
-                    var version = parseFloat( RegExp.jQuery1 );
+                    var version = parseFloat( RegExp.$1 );
                     if(version < 11)
                       return true;
                 }
